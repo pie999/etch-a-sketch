@@ -1,4 +1,7 @@
 const container = document.querySelector(".container");
+let pixelsPerSide = 20;
+createCanvas(pixelsPerSide);
+
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
     while(container.firstChild) 
@@ -8,7 +11,11 @@ button.addEventListener("click", () => {
         alert("Number must be between 1 and 100");
         pixelsPerSide = prompt("How many pixels on each side?");
     }    
-    for (let i = 0; i < pixelsPerSide; i++){
+    createCanvas(pixelsPerSide);
+});
+
+function createCanvas(numberOfPixelsPerSide){
+        for (let i = 0; i < pixelsPerSide; i++){
         const rowcont = document.createElement("div")
         rowcont.classList.add("rowcont");
         container.appendChild(rowcont)
@@ -21,4 +28,4 @@ button.addEventListener("click", () => {
             });
         }    
     }
-});
+}
