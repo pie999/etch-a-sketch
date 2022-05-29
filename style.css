@@ -3,27 +3,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 .container {
-    background-color: rgb(253, 173, 173);
-    align-items: center;
+    border: 3px solid black;
+    height: 70vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 247, 228);
 }
 
 .rowcont {
-    height: min-content;
     display: flex;
+    flex-grow: 1;
 }
 
 .pixel {
-    height: 30px;
-    width: 30px;
-    background-color: rgb(255, 253, 220);
-    border: 1px solid black;
+    flex: 1;
+    
 }
-
-.red {
-    background-color: rgb(255, 93, 93);
-}
-
