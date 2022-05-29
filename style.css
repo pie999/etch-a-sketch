@@ -19,7 +19,11 @@ body {
 .pixel {
     height: 30px;
     width: 30px;
-    background-color: rgb(167, 167, 250);
+    background-color: rgb(255, 253, 220);
     border: 1px solid black;
+}
+
+.red {
+    background-color: rgb(255, 93, 93);
 }
 

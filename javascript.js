@@ -7,5 +7,9 @@ for (let i = 0; i < 16; i++){
         const pixel = document.createElement("div");
         pixel.classList.add("pixel")
         rowcont.appendChild(pixel);
+        pixel.addEventListener("mouseover", () => {
+            pixel.style.backgroundColor = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`;
+        })
     }    
 }
+
