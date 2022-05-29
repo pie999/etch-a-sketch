@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh
+}
+
+.container {
+    background-color: rgb(253, 173, 173);
+    align-items: center;
+}
+
+.rowcont {
+    height: min-content;
+    display: flex;
+}
+
+.pixel {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(167, 167, 250);
+    border: 1px solid black;
+}
+
