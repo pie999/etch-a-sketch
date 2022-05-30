@@ -18,6 +18,9 @@ h2{
     font-size: 18px;
 }
 
+a {
+    color: black;
+}
 
 button {
     margin: 20px;

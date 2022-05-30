@@ -4,14 +4,15 @@ createCanvas(pixelsPerSide);
 
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
-    while(container.firstChild) 
-        container.removeChild(container.firstChild); //clean preavious canvas
-    pixelsPerSide = prompt("How many pixels on each side?");
-    while (pixelsPerSide < 1 || pixelsPerSide > 100){
+    pixelsPerSide = +prompt("How many pixels on each side?");
+    if (isNaN(pixelsPerSide) || pixelsPerSide < 1 || pixelsPerSide > 100){
         alert("Number must be between 1 and 100");
-        pixelsPerSide = prompt("How many pixels on each side?");
     }    
-    createCanvas(pixelsPerSide);
+    else {
+        while (container.firstChild) 
+            container.removeChild(container.firstChild); //clean preavious canvas
+        createCanvas(pixelsPerSide);
+    }
 });
 
 function createCanvas(numberOfPixelsPerSide){
